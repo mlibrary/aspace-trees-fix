@@ -8,6 +8,6 @@ Logger.new($stdout).info("Loading aspace-trees-fix plugin in backend")
 
 module Trees
   def build_node_query
-    self.class.node_model.this_repo.filter(:root_record_id => self.id).order(:ref_id)
+    self.class.node_model.this_repo.filter(:root_record_id => self.id).order(:id)
   end
 end
